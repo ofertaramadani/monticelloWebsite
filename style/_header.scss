@@ -22,19 +22,21 @@
             color:$accent1;
         }
         &:first-child {
-            margin-right: 167px;
+            margin-right: 144px;
         }
         &:nth-child(2),&:nth-child(3),&:nth-child(4){
-            margin-right: 93px;
+            margin-right: 70px;
         }
+        
         &:nth-child(5){
             margin-right: 110px;
         }
         &:nth-child(6),&:nth-child(7){
             margin-right: 20px;
         }
-        // &:nth-child(2),&:nth-child(3),&:nth-child(4),&:nth-child(5)::before{
-        //     content: url('../assets/emptycircle.svg');
-        // }
+        &:nth-child(2)::before,&:nth-child(3)::before,&:nth-child(4)::before,&:nth-child(5)::before{
+            content: url('../assets/emptycircle.svg');
+            padding-right: 14px;
+        }
     }
 }

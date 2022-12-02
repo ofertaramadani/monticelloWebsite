@@ -50,7 +50,6 @@ table {
 
 * {
   box-sizing: border-box;
-  outline: 1px solid red;
 }
 *:before, *:after {
   box-sizing: border-box;
@@ -78,16 +77,20 @@ table {
   color: #FFFFFF;
 }
 .main-header__link:first-child {
-  margin-right: 167px;
+  margin-right: 144px;
 }
 .main-header__link:nth-child(2), .main-header__link:nth-child(3), .main-header__link:nth-child(4) {
-  margin-right: 93px;
+  margin-right: 70px;
 }
 .main-header__link:nth-child(5) {
   margin-right: 110px;
 }
 .main-header__link:nth-child(6), .main-header__link:nth-child(7) {
   margin-right: 20px;
+}
+.main-header__link:nth-child(2)::before, .main-header__link:nth-child(3)::before, .main-header__link:nth-child(4)::before, .main-header__link:nth-child(5)::before {
+  content: url("../assets/emptycircle.svg");
+  padding-right: 14px;
 }
 
 .hero-section h1 {
