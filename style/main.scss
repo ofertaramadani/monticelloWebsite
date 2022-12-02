@@ -1,0 +1,27 @@
+@import './variables';
+@import './mixin';
+// @import './typo';
+@import './reset';
+// @import './grid';
+// @import './responsive';
+
+@import './header.scss';
+@import './hero.scss';
+
+
+body {
+    font-family: 'Source Sans Pro',sans-serif;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Montserrat',sans-serif;
+}
+
+.background-image {
+    background-image:
+    linear-gradient(243.43deg, #7E5AFF 16.9%, #55B7FF 83.27%),
+    url('../assets/hero.jpg');
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    
+}
