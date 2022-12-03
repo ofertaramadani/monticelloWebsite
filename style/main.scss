@@ -1,20 +1,24 @@
 @import './variables';
 @import './mixin';
 @import './reset';
-// @import './grid';
 // @import './responsive';
 @import './header.scss';
 @import './hero.scss';
 @import './whatwedo.scss';
-
-* {
-    outline: 1px solid red;
-}
+@import './gallery.scss';
+@import './contact.scss';
+// * {
+//     outline: 1px solid red;
+// }
 body {
     font-family: 'Source Sans Pro',sans-serif;
 }
 h1,h2,h3,h4,h5,h6 {
     font-family: 'Montserrat',sans-serif;
+}
+img {
+    max-width: 100%;
+    height: auto;
 }
 
 .background-image {

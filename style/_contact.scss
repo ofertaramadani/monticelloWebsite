@@ -1,0 +1,6 @@
+.contact {
+    & p::before {
+        content : url('../assets/location.svg');
+
+    }
+}

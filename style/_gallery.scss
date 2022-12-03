@@ -1,0 +1,41 @@
+.gallery {
+    & {
+        padding-top: 120px;
+        margin-bottom: 139px;
+    }
+    &__first {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        & h3 {
+            font-weight: 700;
+            font-size: 44px;
+            line-height: 54px;
+            text-align: center;
+            color: $accent2;
+            margin-bottom: 89px;
+            padding-top: 30px;
+        }
+    }
+    &__grid {
+        display: grid;
+        gap: 10px;
+        grid-template-columns: 1fr 1fr;
+        padding-bottom: 60px;
+    }
+    &__grid-right {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 9px;
+    }
+    &--button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    & .button  {
+        @include button;
+        padding: 16px 57px;
+    }
+}

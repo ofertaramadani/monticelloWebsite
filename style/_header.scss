@@ -38,5 +38,9 @@
             content: url('../assets/emptycircle.svg');
             padding-right: 14px;
         }
+        &:nth-child(2):hover::before,&:nth-child(3):hover::before,&:nth-child(4):hover::before,&:nth-child(5):hover::before{
+            content: url('../assets/filledcircle.svg');
+        }
     }
+
 }
