@@ -1,0 +1,26 @@
+.footer {
+    & {
+        background-color: gray;
+        margin: auto;
+        padding-bottom: 291px;
+        background: linear-gradient(251.06deg, #7E5AFF -2.19%, #55B7FF 103.21%);
+        
+    }
+    &__list{
+        display: flex;
+        align-items: center;
+        margin-left: 225px;
+
+    }
+    & .footer__link2{
+        margin-right: 20px;
+    }
+    & .icon {
+        margin-right: 300px;
+    }
+   &__nav {
+    padding-top: 220px;
+   }
+   
+
+}

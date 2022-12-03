@@ -276,8 +276,88 @@ table {
   transition: 0.3s;
 }
 
-.contact p::before {
-  content: url("../assets/location.svg");
+.contact {
+  position: relative;
+}
+.contact__img {
+  margin-right: 45px;
+}
+.contact__form {
+  position: absolute;
+  background-color: #FFFFFF;
+  padding: 0px 60px 112px 60px;
+  top: 65%;
+  left: 26%;
+}
+.contact__form-info {
+  display: flex;
+}
+.contact__form-input {
+  display: flex;
+  flex-direction: column;
+}
+.contact input {
+  font-family: "Montserrat";
+  border: none;
+  border-bottom: 1px solid #2C4058;
+  color: #4B5562;
+  margin-bottom: 33px;
+  padding-bottom: 14px;
+  padding-right: 80px;
+}
+.contact__button {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  text-decoration: none;
+  padding: 16px 41px;
+  border: 1px solid black;
+  padding: 11px 34px;
+  margin-left: 117px;
+}
+.contact__button:hover {
+  background-color: #000000;
+  color: #FFFFFF;
+  transition: 0.3s;
+}
+.contact__title {
+  font-weight: 700;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 54px;
+  text-align: center;
+  color: #2C4058;
+  display: block;
+  padding-bottom: 42px;
+}
+.contact__vija {
+  margin-left: 235px;
+  margin-bottom: 30px;
+  margin-top: 16px;
+}
+
+.footer {
+  background-color: gray;
+  margin: auto;
+  padding-bottom: 291px;
+  background: linear-gradient(251.06deg, #7E5AFF -2.19%, #55B7FF 103.21%);
+}
+.footer__list {
+  display: flex;
+  align-items: center;
+  margin-left: 225px;
+}
+.footer .footer__link2 {
+  margin-right: 20px;
+}
+.footer .icon {
+  margin-right: 300px;
+}
+.footer__nav {
+  padding-top: 220px;
 }
 
 body {

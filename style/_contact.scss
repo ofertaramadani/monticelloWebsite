@@ -1,6 +1,51 @@
 .contact {
-    & p::before {
-        content : url('../assets/location.svg');
-
+    &{
+     position: relative;
+    }
+    &__img {
+        margin-right: 45px;
+    }
+    &__form {
+        position: absolute;
+        background-color: $accent1;
+        padding: 0px 60px 112px 60px;
+        top: 65%;
+        left: 26%;
+    }
+    &__form-info {
+        display: flex;   
+    }
+    &__form-input {
+        display: flex;
+        flex-direction: column; 
+    }
+    & input {
+        font-family: 'Montserrat';
+        border:none;
+        border-bottom: 1px solid $accent2;
+        color: $accent7;
+        margin-bottom: 33px;
+        padding-bottom: 14px;
+        padding-right: 80px;
+    }
+    &__button {
+        @include button;
+        padding: 11px 34px;
+        margin-left: 117px;
+    }
+    &__title {
+        font-weight: 700;
+        font-weight: 700;
+        font-size: 44px;
+        line-height: 54px;
+        text-align: center;
+        color: $accent2;
+        display: block;
+        padding-bottom: 42px;
+    }
+    &__vija {
+        margin-left: 235px;
+        margin-bottom: 30px;
+        margin-top: 16px;
     }
 }
