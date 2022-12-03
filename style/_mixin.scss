@@ -1,0 +1,17 @@
+@mixin button {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: $accent3;
+    text-decoration: none;
+    padding: 16px 41px;
+    border: 1px solid black;
+
+    &:hover {
+        background-color: $accent3;
+        color:$accent1;
+        transition: 0.3s;
+    }
+}

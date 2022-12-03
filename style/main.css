@@ -122,6 +122,108 @@ table {
   padding-bottom: 78px;
 }
 
+.wwd {
+  position: relative;
+  margin-bottom: 140px;
+}
+.wwd__first {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 146px;
+}
+.wwd__first h2 {
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 54px;
+  text-align: center;
+  color: #2C4058;
+  padding-right: 70px;
+}
+.wwd__line {
+  margin-top: 60px;
+  color: #2C4058;
+  margin-bottom: 30px;
+}
+.wwd__second {
+  display: flex;
+}
+.wwd img {
+  margin-right: 80px;
+}
+.wwd__article h6 {
+  padding-top: 94px;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 27px;
+  color: #2C4058;
+}
+.wwd__article h3 {
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 54px;
+  color: #2C4058;
+  margin-bottom: 19px;
+}
+.wwd__article p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 167%;
+  color: #2C4058;
+  margin-bottom: 41px;
+}
+.wwd__article .p-italic {
+  margin-top: 60px;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  color: #000000;
+}
+.wwd__article p.italic::before {
+  content: url("../assets/location.svg");
+  padding-right: 5px;
+}
+.wwd__button {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  text-decoration: none;
+  padding: 16px 41px;
+  border: 1px solid black;
+}
+.wwd__button:hover {
+  background-color: #000000;
+  color: #FFFFFF;
+  transition: 0.3s;
+}
+.wwd__rectangle {
+  position: absolute;
+  z-index: -1;
+  top: 234px;
+}
+
+.wwd2 .wwd_image2 {
+  width: 50%;
+  margin-right: 0px;
+}
+.wwd2 .wwd__article2 {
+  margin-right: 80px;
+}
+.wwd2 .wwd__rectangle2 {
+  position: absolute;
+  right: -5.4%;
+  top: -65px;
+  z-index: -1;
+}
+
+* {
+  outline: 1px solid red;
+}
+
 body {
   font-family: "Source Sans Pro", sans-serif;
 }

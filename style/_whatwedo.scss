@@ -1,0 +1,95 @@
+.wwd {
+    & {
+        position: relative;
+        margin-bottom: 140px;
+    }
+    &__first {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 146px;
+        & h2 {
+            font-weight: 700;
+            font-size: 44px;
+            line-height: 54px;
+            text-align: center;
+            color: $accent2;
+            padding-right: 70px;
+        }
+    }
+    &__line {
+        margin-top: 60px;
+        color:$accent2;
+        margin-bottom: 30px;
+    }
+    &__second {
+        display: flex;
+    }
+    & img {
+        margin-right: 80px;
+    }
+    &__article {
+        & h6 {
+            padding-top: 94px;
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 27px;
+            color: $accent2;
+        }
+        & h3 {
+            font-weight: 700;
+            font-size: 44px;
+            line-height: 54px;
+            color: $accent2;
+            margin-bottom: 19px;
+        }
+        & p {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 167%;
+            color: $accent2;
+            margin-bottom: 41px;
+        }
+        & .p-italic {
+            margin-top: 60px;
+            font-style: italic;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 20px;
+            color: $accent3;
+        }
+        & p.italic::before {
+            content: url('../assets/location.svg');
+            padding-right: 5px;
+        }
+    }
+    &__button {
+        @include button;
+    }
+    
+    &__rectangle {
+        position: absolute;
+        z-index: -1;
+        top: 234px;
+
+    }
+}
+
+.wwd2 {
+    
+    & .wwd_image2 {
+        width: 50%;
+        margin-right: 0px;
+       
+    }
+    & .wwd__article2 {
+        margin-right: 80px;    
+    }
+    & .wwd__rectangle2 {
+        position: absolute;
+        right: -5.4%;
+        top: -65px;
+        z-index: -1;
+    }
+   
+}

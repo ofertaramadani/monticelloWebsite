@@ -1,15 +1,15 @@
 @import './variables';
 @import './mixin';
-// @import './typo';
 @import './reset';
 // @import './grid';
 // @import './responsive';
-
 @import './header.scss';
 @import './hero.scss';
 @import './whatwedo.scss';
 
-
+* {
+    outline: 1px solid red;
+}
 body {
     font-family: 'Source Sans Pro',sans-serif;
 }
