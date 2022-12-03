@@ -1,13 +1,14 @@
-@import './variables';
-@import './mixin';
-@import './reset';
-// @import './responsive';
+@import './variables.scss';
+@import './mixin.scss';
+@import './reset.scss';
 @import './header.scss';
+@import './hamburger.scss';
 @import './hero.scss';
 @import './whatwedo.scss';
 @import './gallery.scss';
 @import './contact.scss';
 @import './footer.scss';
+@import './responsive.scss';
 // * {
 //     outline: 1px solid red;
 // }
@@ -22,13 +23,20 @@ img {
     height: auto;
 }
 
+// .background-image {
+//     background-image:
+//     linear-gradient(243.43deg, #7E5AFF 16.9%, #55B7FF 83.27%),
+//     url('../assets/hero.jpg');
+//     width: 100%;
+//     height: auto;
+//     background-size: cover;
+// }
+
+
+
 .background-image {
-    background-image:
-    linear-gradient(243.43deg, #7E5AFF 16.9%, #55B7FF 83.27%),
-    url('../assets/hero.jpg');
-    width: 100%;
-    height: auto;
+    background:linear-gradient(243.43deg, #6442ddd1 16.9%, #49A3E3 83.27%), url('../assets/hero.jpg');
     background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.6;
 }
-
-

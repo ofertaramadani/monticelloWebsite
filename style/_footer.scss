@@ -1,9 +1,10 @@
 .footer {
     & {
-        background-color: gray;
-        margin: auto;
+        background:linear-gradient(243.43deg, #6442ddd1 16.9%, #49A3E3 83.27%), url('../assets/hero.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        opacity: 0.6;
         padding-bottom: 291px;
-        background: linear-gradient(251.06deg, #7E5AFF -2.19%, #55B7FF 103.21%);
         
     }
     &__list{

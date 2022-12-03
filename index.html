@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./vendor/owl/assets/owl.carousel.css">
     <link rel="stylesheet" href="./vendor/owl/assets/owl.theme.default.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,22 +17,43 @@
    <div class="background-image background-linear">
     <header class="main-header">
         <div class="container">
+            <div class="hamburger">
+                <a class="scroll_to" href="#"><img src="./assets/logo.svg" alt="logo"></a>
+                <a href="javascript:void(0);" class="icon">
+                    <i class="fa fa-bars"></i>
+                  </a>
+            </div>
+            <div class="hamburgerCLICK">
+                <nav>
+                    <ul class="main-header__list hamburgerCLICK__links ">
+                        <li class="main-header__link hamburgerCLICK__link" ><a onclick="a()" data-link="section1" class="scroll_to" href="#">ABOUT US</a></li>
+                        <li class="main-header__link hamburgerCLICK__link" ><a data-link="section2" class="scroll_to" href="#">PROJECTS</a></li>
+                        <li class="main-header__link hamburgerCLICK__link" ><a data-link="section3" class="scroll_to" href="#">NEWS</a></li>
+                        <li class="main-header__link hamburgerCLICK__link" ><a data-link="section4" class="scroll_to" href="#">CONTACT</a></li>
+                        <li class="main-header__link hamburgerCLICK__link" ><a class="scroll_to" href="#"><img src="./assets/facebook.svg" alt=""></a></li>
+                        <li class="main-header__link hamburgerCLICK__link" ><a class="scroll_to" href="#"><img src="./assets/twitter.svg" alt=""></a></li>
+                        <li class="main-header__link hamburgerCLICK__link" ><a class="scroll_to" href="#"><img src="./assets/instagram.svg" alt=""></a></li>
+                    </ul>
+                </nav>
+            </div>
+        <div class="main-header__section">
         <nav>
             <ul class="main-header__list">
-                <li class="main-header__link" ><a href="#"><img src="./assets/logo.svg" alt="logo"></a></li>
-                <li class="main-header__link" ><a href="#">ABOUT US</a></li>
-                <li class="main-header__link" ><a href="#">PROJECTS</a></li>
-                <li class="main-header__link" ><a href="#">NEWS</a></li>
-                <li class="main-header__link" ><a href="#">CONTACT</a></li>
-                <li class="main-header__link" ><a href="#"><img src="./assets/facebook.svg" alt=""></a></li>
-                <li class="main-header__link" ><a href="#"><img src="./assets/twitter.svg" alt=""></a></li>
-                <li class="main-header__link" ><a href="#"><img src="./assets/instagram.svg" alt=""></a></li>
+                <li class="main-header__link" ><a class="scroll_to" href="#"><img src="./assets/logo.svg" alt="logo"></a></li>
+                <li class="main-header__link" ><a onclick="a()" data-link="section1" class="scroll_to" href="#">ABOUT US</a></li>
+                <li class="main-header__link" ><a data-link="section2" class="scroll_to" href="#">PROJECTS</a></li>
+                <li class="main-header__link" ><a data-link="section3" class="scroll_to" href="#">NEWS</a></li>
+                <li class="main-header__link" ><a data-link="section4" class="scroll_to" href="#">CONTACT</a></li>
+                <li class="main-header__link" ><a class="scroll_to" href="#"><img src="./assets/facebook.svg" alt=""></a></li>
+                <li class="main-header__link" ><a class="scroll_to" href="#"><img src="./assets/twitter.svg" alt=""></a></li>
+                <li class="main-header__link" ><a class="scroll_to" href="#"><img src="./assets/instagram.svg" alt=""></a></li>
             </ul>
         </nav>
+    </div>
      </div>
     </header>
     <main>
-        <section class="hero-section">
+        <section class="hero-section section1">
             <div class="container">
             <div class="owl-carousel owl-theme">
                 <div class="item"><h1>SIMPLE & MODERN</h1>
@@ -54,37 +76,38 @@
         </div>
         </section>
     </div>
-        <section class="wwd">
+        <section class="wwd section2">
             <img src="./assets/bluerec.svg" alt="" class="wwd__rectangle">
             <div class="container">
-            <div class="wwd__first">
+            <div id="projectss" class="wwd__first">
             <img class="wwd__line" src="./assets/line.svg" alt="">
             <h2 class="wwd__title">WHAT WE DO</h2>
              </div>
             <div class="wwd__second">
-                <img class="wwd__image" src="./assets/article1.png" alt="">
-                <article class="wwd__article">
+                <div><img class="wwd__image" src="./assets/article1.png" alt=""></div>
+                <div><article class="wwd__article">
                     <h6>ONE WORLD</h6>
                     <h3>TRADE CENTER</h3>
                     <p>Increasing prosperity in our lives can be accomplished by having the right frame of mind. The truth is, our thoughts are very powerful</p>
                     <a class="wwd__button" href="#">More details</a>
                     <p class="p-italic">New York City, United States - 1776 feet</p>
-                </article>
+                </article></div>
             </div>
         </div>
         </section>
-        <section class="wwd wwd2">
+        <section class="wwd wwd2 section3">
             <img src="./assets/purplerec.svg" alt="" class="wwd__rectangle2">
             <div class="container">
             <div class="wwd__second wwd__second2">
-                <article class="wwd__article wwd__article2">
+               <div><article class="wwd__article wwd__article2">
                     <h6>COMMERCE CENTER</h6>
                     <h3>COMMERCE CENTER</h3>
                     <p>Increasing prosperity in our lives can be accomplished by having the right frame of mind. The truth is, our thoughts are very powerful</p>
                     <a class="wwd__button" href="#">More details</a>
                     <p class="p-italic">New York City, United States - 1776 feet</p>
                 </article>
-                <img class="wwd__image wwd_image2" src="./assets/article1.png" alt="">
+            </div> 
+                <div><img class="wwd__image wwd_image2" src="./assets/article1.png" alt=""></div>
             </div>
         </div>
         </section>
@@ -103,7 +126,7 @@
             </div>
         </div> 
         </section> -->
-        <section class="gallery">
+        <section class="gallery section4">
             <div class="container">
             <div class="gallery__first">
                 <img src="./assets/line.svg" alt="">
@@ -124,7 +147,7 @@
             
         </div>
         </section>
-        <section class="contact">
+        <section class="contact section5">
             <img src="./assets/Map.png" alt="">
             <div class="contact__form">
                 <img class="contact__vija" src="./assets/line.svg" alt="">

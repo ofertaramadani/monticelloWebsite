@@ -1,0 +1,22 @@
+.hamburger {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.hamburgerCLICK {
+    & {
+        display: none;
+    }
+    &__links {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+    &__link {
+        margin: 0;
+        padding: 0;
+    }
+}

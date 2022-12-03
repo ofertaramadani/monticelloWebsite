@@ -7,6 +7,7 @@
     }
     &__form {
         position: absolute;
+        z-index: 1;
         background-color: $accent1;
         padding: 0px 60px 112px 60px;
         top: 65%;
