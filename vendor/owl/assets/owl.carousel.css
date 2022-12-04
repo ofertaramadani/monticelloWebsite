@@ -6,10 +6,10 @@
 /*
  *  Owl Carousel - Core
  */
- .owl-one .owl-dot {
+ /* .owl-one .owl-dot {
   display: flex;
   flex-direction: row;
- }
+ } */
 .owl-carousel {
   width: 100%;
   -webkit-tap-highlight-color: transparent;

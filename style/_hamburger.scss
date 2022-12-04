@@ -1,29 +1,11 @@
-// .hamburger {
-//     display: flex;
-//     justify-content: flex-end;
-//     align-items: flex-end;
-//     display: none;
-//     &__icon {
-//         margin-top: 5px;
-//         margin-right: 5px;
-//         float:right;
-//         width: 40px;
-//         height: 40px;
-//         display: block;
-//         border: none;
-//         background: linear-gradient(
-//           to bottom, 
-//           $accent3, $accent3 20%, 
-//           transparent 20%, transparent 40%, 
-//           $accent3 40%, $accent3 60%, 
-//           transparent 60%, transparent 80%, 
-//           $accent3 80%, $accent3 100%
-//         );
-//     }
-// }
+
+.hamburger {
+  display: none;
+
+}
 .nav-toggle {
-    margin-top: 5px;
-    margin-right: 5px;
+    margin-top: 7px;
+    margin-right: 7px;
     float: right;
     display: flex;
     flex-direction: column;
@@ -35,7 +17,7 @@
   .nav-toggle .bar {
     height: 3px;
     width: 100%;
-    background-color: black;
+    background-color: $accent3;
     transition: all 100ms ease-in-out;
   }
   
