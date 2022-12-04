@@ -98,23 +98,49 @@ table {
 
 .hamburger {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-end;
+  align-items: flex-end;
   display: none;
+}
+.hamburger__icon {
+  float: right;
+  width: 30px;
+  color: black;
+  border-top: 3px solid white;
+  border-bottom: 3px solid white;
 }
 
 .hamburgerCLICK {
+  background-color: #2C4058;
   display: none;
 }
 .hamburgerCLICK__links {
   display: flex;
+  align-items: start;
+  padding-bottom: 10px;
   flex-direction: column;
   margin: 0;
   padding: 0;
 }
+.hamburgerCLICK__links:last-child {
+  padding-bottom: 100%;
+}
+.hamburgerCLICK__links:first-child {
+  padding-top: 4%;
+}
 .hamburgerCLICK__link {
   margin: 0;
-  padding: 0;
+  padding: 15px;
+}
+.hamburgerCLICK__link a {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 18px;
+  color: #FFFFFF;
+}
+.hamburgerCLICK__link::before {
+  content: "";
 }
 
 .hero-section h1 {
@@ -418,33 +444,77 @@ table {
     font-size: 60px;
     text-align: center;
   }
-  .wwd__line {
-    padding-left: 50px;
-  }
-  .wwd__title {
-    padding-left: 40px;
-  }
-  .wwd__article h6 {
-    padding-top: 0px;
-  }
-  .wwd__img {
-    width: 800px;
-    margin-left: 5px;
-  }
   .wwd__rectangle {
-    width: 50%;
-    left: 7%;
+    right: 9%;
+  }
+  .wwd__image, .wwd__image2 {
+    display: none;
   }
   .contact__form {
     right: 10%;
     left: 10%;
   }
-  .wwd2__second2 {
+  .owl-carousel .owl-dots {
+    right: 5%;
+  }
+}
+@media (max-width: 767px) {
+  .hamburger {
+    display: block;
+  }
+  .main-header__section {
+    display: none;
+  }
+  .hero-section h1 {
+    font-size: 60px;
+    text-align: center;
+  }
+  .wwd__line {
+    padding-left: 40px;
+  }
+  .wwd__title {
+    padding-left: 30px;
+  }
+  .wwd__image {
+    width: 80%;
+    margin-right: 20px;
+  }
+  .wwd__rectangle {
+    width: 80%;
+    left: 25%;
+  }
+  .wwd h6 {
+    padding-top: 10px;
+  }
+  .wwd__second {
     display: grid;
     grid-template-columns: 1fr;
   }
-  .wwd2 .wwd__article2 {
-    margin-right: 0px;
+  .wwd__image2 {
+    width: 80%;
+  }
+  .wwd__rectangle2 {
+    bottom: 0%;
+    right: 0;
+  }
+  .owl-carousel .owl-dots {
+    display: none;
+  }
+  .gallery__grid {
+    grid-template-columns: 1fr;
+  }
+  .contact__form-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+  }
+  .contact__form {
+    left: 2%;
+    padding: 0px 30px 60px 30px;
+  }
+  .contact-input {
+    margin-top: 10px;
   }
 }
 body {

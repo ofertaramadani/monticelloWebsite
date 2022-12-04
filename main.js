@@ -32,21 +32,12 @@ $('.owl-carousel').owlCarousel({
 //     }
 // })
 
-// const links = document.querySelectorAll('.scroll_to');
-// function r(){
-// links.forEach((item) =>{
-//     item.addEventListener('click',()=>{
-//         const el=document.getElementById(item.getAttribute('data-link'));
-//         el.current.scrollIntoView({ behavior : 'smooth'});
-//     });
-// });
-// }
-// $( document ).ready(r) ;
+
 
 $(document).ready(function a(){
     document.getElementById('section1').scrollIntoView({behavior: "smooth"});
 })
 
-window.addEventListener('DOMContentLoaded', (event) => {
-    console.log('DOM fully loaded and parsed');
-});
+$(".hamburger").click(function(){
+    $(".hamburgerCLICK").toggle();
+  });
