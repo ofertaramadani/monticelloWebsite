@@ -5,13 +5,12 @@
 @import './hamburger.scss';
 @import './hero.scss';
 @import './whatwedo.scss';
+@import './latest-news.scss';
 @import './gallery.scss';
 @import './contact.scss';
 @import './footer.scss';
 @import './responsive.scss';
-// * {
-//     outline: 1px solid red;
-// }
+
 body {
     font-family: 'Source Sans Pro',sans-serif;
 }
@@ -22,18 +21,9 @@ img {
     max-width: 100%;
     height: auto;
 }
-
-// .background-image {
-//     background-image:
-//     linear-gradient(243.43deg, #7E5AFF 16.9%, #55B7FF 83.27%),
-//     url('../assets/hero.jpg');
-//     width: 100%;
-//     height: auto;
-//     background-size: cover;
-// }
-
-
-
+html {
+    scroll-behavior: smooth;
+  }
 .background-image {
     background:linear-gradient(243.43deg, #6442ddd1 16.9%, #49A3E3 83.27%), url('../assets/hero.jpg');
     background-size: cover;

@@ -270,6 +270,57 @@ table {
   z-index: -1;
 }
 
+.latest-news {
+  background: linear-gradient(243.43deg, rgba(100, 66, 221, 0.8196078431) 16.9%, #49A3E3 83.27%), url("../assets/hero.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 291px;
+}
+.latest-news__title {
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 54px;
+  text-align: center;
+  color: #FFFFFF;
+  margin-bottom: 89px;
+  margin-top: 39px;
+}
+.latest-news__vija {
+  margin-left: 530px;
+  margin-top: 135px;
+}
+.latest-news .item {
+  background-color: white;
+  width: 370px;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 36px;
+}
+.latest-news .item .latest-news__author {
+  width: 186px;
+  height: 60px;
+  padding-left: 41px;
+}
+.latest-news .item h4 {
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-top: 30px;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 27px;
+  color: #2C4058;
+  margin-bottom: 30px;
+}
+.latest-news .item p {
+  padding-right: 20px;
+  padding-left: 20px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: #000000;
+  margin-bottom: 40px;
+}
+
 .gallery {
   padding-top: 120px;
   margin-bottom: 139px;
@@ -397,7 +448,7 @@ table {
 .footer__list {
   display: flex;
   align-items: center;
-  margin-left: 225px;
+  margin-left: 250px;
 }
 .footer .footer__link2 {
   margin-right: 20px;
@@ -406,7 +457,7 @@ table {
   margin-right: 300px;
 }
 .footer__nav {
-  padding-top: 220px;
+  padding-top: 240px;
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -528,6 +579,10 @@ h1, h2, h3, h4, h5, h6 {
 img {
   max-width: 100%;
   height: auto;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .background-image {

@@ -1,4 +1,4 @@
-$('.owl-carousel').owlCarousel({
+$('.owl-one').owlCarousel({
     loop:true,
     margin:10,
     nav:true,
@@ -15,27 +15,21 @@ $('.owl-carousel').owlCarousel({
     }
 })
 
-// $('.owl-hero').owlCarousel({
-//     loop:true,
-//     margin:10,
-//     nav:true,
-//     responsive:{
-//         0:{
-//             items:3
-//         },
-//         600:{
-//             items:3      
-//          },
-//         1000:{
-//             items:3
-//         }
-//     }
-// })
-
-
-
-$(document).ready(function a(){
-    document.getElementById('section1').scrollIntoView({behavior: "smooth"});
+$('.owl-two').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3      
+         },
+        1000:{
+            items:3
+        }
+    }
 })
 
 $(".hamburger").click(function(){

@@ -27,10 +27,10 @@
             <div class="hamburgerCLICK">
                 <nav>
                     <ul class="main-header__list hamburgerCLICK__links ">
-                        <li class="hamburgerCLICK__link" ><a onclick="a()" data-link="section1" class="scroll_to" href="#">ABOUT US</a></li>
-                        <li class="hamburgerCLICK__link" ><a data-link="section2" class="scroll_to" href="#">PROJECTS</a></li>
-                        <li class="hamburgerCLICK__link" ><a data-link="section3" class="scroll_to" href="#">NEWS</a></li>
-                        <li class="hamburgerCLICK__link" ><a data-link="section4" class="scroll_to" href="#">CONTACT</a></li>
+                        <li class="hamburgerCLICK__link" ><a class="scroll_to" href="#section1">ABOUT US</a></li>
+                        <li class="hamburgerCLICK__link" ><a class="scroll_to" href="#section2">PROJECTS</a></li>
+                        <li class="hamburgerCLICK__link" ><a class="scroll_to" href="#section3">NEWS</a></li>
+                        <li class="hamburgerCLICK__link" ><a class="scroll_to" href="#section4">CONTACT</a></li>
                         <li class="hamburgerCLICK__link" ><a class="scroll_to" href="#"><img src="./assets/facebook.svg" alt=""></a></li>
                         <li class="hamburgerCLICK__link" ><a class="scroll_to" href="#"><img src="./assets/twitter.svg" alt=""></a></li>
                         <li class="hamburgerCLICK__link" ><a class="scroll_to" href="#"><img src="./assets/instagram.svg" alt=""></a></li>
@@ -41,10 +41,10 @@
         <nav>
             <ul class="main-header__list">
                 <li class="main-header__link" ><a class="scroll_to" href="#"><img src="./assets/logo.svg" alt="logo"></a></li>
-                <li class="main-header__link" ><a onclick="a()" data-link="section1" class="scroll_to" href="#">ABOUT US</a></li>
-                <li class="main-header__link" ><a data-link="section2" class="scroll_to" href="#">PROJECTS</a></li>
-                <li class="main-header__link" ><a data-link="section3" class="scroll_to" href="#">NEWS</a></li>
-                <li class="main-header__link" ><a data-link="section4" class="scroll_to" href="#">CONTACT</a></li>
+                <li class="main-header__link" ><a class="scroll_to" href="#section1">ABOUT US</a></li>
+                <li class="main-header__link" ><a class="scroll_to" href="#section2">PROJECTS</a></li>
+                <li class="main-header__link" ><a class="scroll_to" href="#section3">NEWS</a></li>
+                <li class="main-header__link" ><a class="scroll_to" href="#section4">CONTACT</a></li>
                 <li class="main-header__link" ><a class="scroll_to" href="#"><img src="./assets/facebook.svg" alt=""></a></li>
                 <li class="main-header__link" ><a class="scroll_to" href="#"><img src="./assets/twitter.svg" alt=""></a></li>
                 <li class="main-header__link" ><a class="scroll_to" href="#"><img src="./assets/instagram.svg" alt=""></a></li>
@@ -55,9 +55,9 @@
      </div>
     </header>
     <main>
-        <section class="hero-section section1">
+        <section class="hero-section">
             <div class="container">
-            <div class="owl-carousel owl-theme">
+            <div class="owl-one owl-carousel owl-theme">
                 <div class="item"><h1>SIMPLE & MODERN</h1>
                     <h5>Lorem ipsum dolor sit amet.</h5>
                 </div>
@@ -78,7 +78,7 @@
         </div>
         </section>
     </div>
-        <section class="wwd section2">
+        <section class="wwd" id="section1">
             <img src="./assets/bluerec.svg" alt="" class="wwd__rectangle">
             <div class="container">
             <div id="projectss" class="wwd__first">
@@ -97,7 +97,7 @@
             </div>
         </div>
         </section>
-        <section class="wwd wwd2 section3">
+        <section class="wwd wwd2 section3" id="section2">
             <img src="./assets/purplerec.svg" alt="" class="wwd__rectangle2">
             <div class="container">
             <div class="wwd__second wwd__second2">
@@ -108,26 +108,41 @@
                     <a class="wwd__button" href="#">More details</a>
                     <p class="p-italic">New York City, United States - 1776 feet</p>
                 </article>
-                <img class="wwd__image wwd__image2" src="./assets/article1.png" alt="">
+                <img class="wwd__image wwd_image2" src="./assets/article1.png" alt="">
             </div>
         </div>
         </section>
-        <!-- <section class="latest-news">
+        <section class="latest-news">
             <div class="container">
             <div class="latest-news__first">
-                <img src="./assets/line2.svg" alt="">
-                <h3>LATEST NEWS</h3>
+                <img class="latest-news__vija" src="./assets/line2.svg" alt="">
+                <h3 class="latest-news__title">LATEST NEWS</h3>
                 <article class="latest-news__article">
-                    <div class="owl-hero owl-carousel owl-theme">
-                        <div class="item"><h4>1</h4></div>
-                        <div class="item"><h4>2</h4></div>
-                        <div class="item"><h4>3</h4></div>
+                    <div class="owl-two owl-carousel owl-theme">
+                        <div class="item">
+                            <img src="./assets/i1.png" alt="">
+                            <h4>SEE THE UNMATCHED BEAUTY OF THE GREAT.</h4>
+                            <p>Free directories: directories are perfect for customers that are searching for...</p>
+                            <img class="latest-news__author" src="./assets/a1.svg" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="./assets/i2.png" alt="">
+                            <h4>SEE THE UNMATCHED BEAUTY OF THE GREAT.</h4>
+                            <p>Free directories: directories are perfect for customers that are searching for...</p>
+                            <img class="latest-news__author" src="./assets/a1.svg" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="./assets/i3.png" alt="">
+                            <h4>SEE THE UNMATCHED BEAUTY OF THE GREAT.</h4>
+                            <p>Free directories: directories are perfect for customers that are searching for...</p>
+                            <img class="latest-news__author" src="./assets/a1.svg" alt="">
+                        </div>
                     </div>
                 </article>
             </div>
         </div> 
-        </section> -->
-        <section class="gallery section4">
+        </section>
+        <section class="gallery section4" id="section3">
             <div class="container">
             <div class="gallery__first">
                 <img src="./assets/line.svg" alt="">
@@ -148,7 +163,7 @@
             
         </div>
         </section>
-        <section class="contact section5">
+        <section class="contact section5" id="section4">
             <img src="./assets/Map.png" alt="">
             <div class="contact__form">
                 <img class="contact__vija" src="./assets/line.svg" alt="">
