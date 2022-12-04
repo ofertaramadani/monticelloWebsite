@@ -1,27 +1,67 @@
-.hamburger {
+// .hamburger {
+//     display: flex;
+//     justify-content: flex-end;
+//     align-items: flex-end;
+//     display: none;
+//     &__icon {
+//         margin-top: 5px;
+//         margin-right: 5px;
+//         float:right;
+//         width: 40px;
+//         height: 40px;
+//         display: block;
+//         border: none;
+//         background: linear-gradient(
+//           to bottom, 
+//           $accent3, $accent3 20%, 
+//           transparent 20%, transparent 40%, 
+//           $accent3 40%, $accent3 60%, 
+//           transparent 60%, transparent 80%, 
+//           $accent3 80%, $accent3 100%
+//         );
+//     }
+// }
+.nav-toggle {
+    margin-top: 5px;
+    margin-right: 5px;
+    float: right;
     display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    display: none;
-    &__icon {
-        margin-top: 5px;
-        margin-right: 5px;
-        float:right;
-        width: 40px;
-        height: 40px;
-        display: block;
-        border: none;
-        background: linear-gradient(
-          to bottom, 
-          $accent3, $accent3 20%, 
-          transparent 20%, transparent 40%, 
-          $accent3 40%, $accent3 60%, 
-          transparent 60%, transparent 80%, 
-          $accent3 80%, $accent3 100%
-        );
-    }
-}
-
+    flex-direction: column;
+    justify-content: space-between;
+    height: 22px;
+    width: 22px;
+  }
+  
+  .nav-toggle .bar {
+    height: 3px;
+    width: 100%;
+    background-color: black;
+    transition: all 100ms ease-in-out;
+  }
+  
+  .nav-toggle:hover {
+    cursor: pointer;
+  }
+  
+  .x:nth-of-type(1) {
+    transition: all 100ms ease-in-out;
+    transform: rotate(45deg);
+    transform-origin: top left;
+    width: 28px;
+  }
+  
+  .x:nth-of-type(2) {
+    transition: all 100ms ease-in-out;
+    transform-origin: center;
+    width: 0;
+  }
+  
+  .x:nth-of-type(3) {
+    transition: all 100ms ease-in-out;
+    transform: rotate(-45deg);
+    transform-origin: bottom left;
+    width: 28px;
+  }
 .hamburgerCLICK {
     & {
        background-color: $accent2;
@@ -57,31 +97,3 @@
     }
 }
 
-.menu-btn {
-    position: absolute;
-    z-index: 3;
-    right: 35px;
-    top: 35px;
-    cursor: pointer;
-    transition: all 0.5s ease-out;
-}
-
-/* Styling the hamburger lines */
-.menu-btn .btn-line {
-    width: 28px;
-    height: 3px;
-    margin: 0 0 5px 0;
-    background: black;
-    transition: all 0.5s ease-out;
-}
-
-/* Adding transform to the X */
-.menu-btn.close {
-    transform: rotate(180deg);
-}
-
-/* Styling the three lines
-    to make it an X */
-.menu-btn.close .btn-line:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 5px);
-}
