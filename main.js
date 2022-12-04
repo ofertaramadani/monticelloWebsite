@@ -34,18 +34,17 @@ $('.owl-two').owlCarousel({
             items:1
         },
         600:{
-            items:1     
+            items:2     
          },
         1000:{
-            items:2
+            items:3
         }
     }
 })
 
 $(".hamburger").click(function(){
-    $(".hamburgerCLICK").toggle();
+    $(".hamburgerCLICK").toggle("slow");
   });
-
 $(".foto").click(function(){
     var src=document.getElementById('foto1').src;
     var img = document.createElement('img');
