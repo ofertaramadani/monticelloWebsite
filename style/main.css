@@ -103,11 +103,14 @@ table {
   display: none;
 }
 .hamburger__icon {
+  margin-top: 5px;
+  margin-right: 5px;
   float: right;
-  width: 30px;
-  color: black;
-  border-top: 3px solid white;
-  border-bottom: 3px solid white;
+  width: 50px;
+  height: 50px;
+  display: block;
+  border: none;
+  background: linear-gradient(to bottom, #000000, #000000 20%, transparent 20%, transparent 40%, #000000 40%, #000000 60%, transparent 60%, transparent 80%, #000000 80%, #000000 100%);
 }
 
 .hamburgerCLICK {
@@ -170,6 +173,14 @@ table {
   align-items: center;
   justify-content: center;
   padding-bottom: 78px;
+}
+
+.owl-one .owl-dots {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: -5%;
+  top: -10%;
 }
 
 .wwd {
@@ -505,11 +516,16 @@ table {
     right: 10%;
     left: 10%;
   }
-  .owl-carousel .owl-dots {
+  .owl-one .owl-dots {
     right: 5%;
   }
 }
 @media (max-width: 767px) {
+  .wwd__article2 {
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10%;
+  }
   .hamburger {
     display: block;
   }
@@ -519,6 +535,10 @@ table {
   .hero-section h1 {
     font-size: 60px;
     text-align: center;
+  }
+  .wwd__article {
+    padding-right: 10px;
+    padding-left: 10px;
   }
   .wwd__line {
     padding-left: 40px;
@@ -532,7 +552,7 @@ table {
   }
   .wwd__rectangle {
     width: 80%;
-    left: 25%;
+    left: 20%;
   }
   .wwd h6 {
     padding-top: 10px;
@@ -541,14 +561,15 @@ table {
     display: grid;
     grid-template-columns: 1fr;
   }
-  .wwd__image2 {
-    width: 80%;
+  .wwd2 .wwd__second2 {
+    display: flex;
+    flex-direction: column-reverse;
   }
-  .wwd__rectangle2 {
-    bottom: 0%;
-    right: 0;
+  .wwd2 .wwd__rectangle2 {
+    position: absolute;
+    bottom: -100%;
   }
-  .owl-carousel .owl-dots {
+  .owl-one .owl-dots {
     display: none;
   }
   .gallery__grid {
@@ -567,7 +588,14 @@ table {
   .contact-input {
     margin-top: 10px;
   }
+  .latest-news__vija {
+    margin-left: 37%;
+  }
 }
+* {
+  outline: 1px solid red;
+}
+
 body {
   font-family: "Source Sans Pro", sans-serif;
 }

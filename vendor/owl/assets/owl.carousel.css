@@ -6,7 +6,7 @@
 /*
  *  Owl Carousel - Core
  */
- .owl-carousel .owl-dot {
+ .owl-one .owl-dot {
   display: flex;
   flex-direction: row;
  }
@@ -55,15 +55,6 @@
   .owl-carousel .owl-nav.disabled,
   .owl-carousel .owl-dots.disabled {
     display: none; }
-  .owl-dots {
-      display: flex;
-      flex-direction: column;
-      position: absolute;
-      right: -5%;
-      top:-10%;
-      
-  }
-
   .owl-carousel .owl-nav .owl-prev,
   .owl-carousel .owl-nav .owl-next,
   .owl-carousel .owl-dot {
